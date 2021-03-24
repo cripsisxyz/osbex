@@ -1,0 +1,711 @@
+{
+  "anuncios": {
+    "1735": {
+      "actos": [
+        {
+          "Sociedad unipersonal": "Cambio de identidad del socio \u00fanico: LOPEZ GOMEZ CARLOS"
+        },
+        {
+          "Ceses/Dimisiones": {
+            "Adm. Unico": [
+              "CASTRO PENA IVAN"
+            ]
+          }
+        },
+        {
+          "Nombramientos": {
+            "Adm. Unico": [
+              "LOPEZ GOMEZ CARLOS"
+            ]
+          }
+        },
+        {
+          "Reducci\u00f3n de capital": "Importe reducci\u00f3n: 5,06 Euros. Resultante Suscrito: 3.000,00 Euros."
+        },
+        {
+          "Ampliaci\u00f3n de capital": "Capital: 36.000,00 Euros. Resultante Suscrito: 39.000,00 Euros."
+        },
+        {
+          "Modificaciones estatutarias": "Art\u00edculo de los estatutos: 2\u00ba. Relativo al objeto social.-. Art\u00edculo de los estatutos: 1\u00ba. Denominaci\u00f3n social.-. Art\u00edculo de los estatutos: 5\u00ba. Relativo al capital social.-. Art\u00edculo de los estatutos: 5\u00ba. Relativo al capital social.-."
+        },
+        {
+          "Cambio de denominaci\u00f3n social": "CBD HEMP SL."
+        },
+        {
+          "Ampliacion del objeto social": "Agricultura, cultivo de hortalizas. Comercio al por mayor y menor de productos de cosm\u00e9tica. Comercio al por mayor y menor de productos alimenticios. Comercio al por mayor de flores y plantas. Otras actividades de consultor\u00eda de gesti\u00f3n empresarial. Servicios t\u00e9cnicos de ingenier\u00eda."
+        }
+      ],
+      "datos registrales": "T 2145 , F 143, S 8, H C 22060, I/A 3 (22.12.20).",
+      "empresa": "FERMAJA FERROL SL",
+      "liquidacion": false,
+      "num_actos": 8,
+      "registro": "La Coru\u00f1a",
+      "sucursal": false
+    },
+    "1736": {
+      "actos": [
+        {
+          "Declaraci\u00f3n de unipersonalidad": "Socio \u00fanico: FERREIRA MEIZOSO MARIA DELFINA"
+        }
+      ],
+      "datos registrales": "T 1524 , F 31, S 8, H C 11973, I/A 3 (28.12.20).",
+      "empresa": "INVESLABOR SL",
+      "liquidacion": false,
+      "num_actos": 1,
+      "registro": "La Coru\u00f1a",
+      "sucursal": false
+    },
+    "1737": {
+      "actos": [
+        {
+          "Modificaciones estatutarias": "Art\u00edculo 16-bis.- El cargo de Administrador ser\u00e1 remunerado. La retribuci\u00f3n ser\u00e1 dineraria, con un sistema de retribuci\u00f3n fija, que ser\u00e1 fijado por la Junta General. Asimismo, la retribuci\u00f3n indicada anteriormente, ser\u00e1 compatible con las dem\u00e1s percepciones profesioanles o laborales que correponda."
+        }
+      ],
+      "datos registrales": "T 3384 , F 117, S 8, H C 46214, I/A 5 (28.12.20).",
+      "empresa": "ORGANIZACION Y GESTION DE PROYECTOS Y OBRAS, S.L.",
+      "liquidacion": false,
+      "num_actos": 1,
+      "registro": "La Coru\u00f1a",
+      "sucursal": false
+    },
+    "1738": {
+      "actos": [
+        {
+          "Modificaciones estatutarias": "Art\u00edculo 20-BIS.- El cargo de Administrador ser\u00e1 ser remunerado. La retribuci\u00f3n ser\u00e1 dineraria, con un sistrema de retribuci\u00f3n fija, que ser\u00e1 fijado por la Junta General. Asimismo, la retribuci\u00f3n indicada anteriormente, ser\u00e1 compatible con las dem\u00e1s percepciones profesionales o laborales que."
+        }
+      ],
+      "datos registrales": "T 3525 , F 204, S 8, H C 51541, I/A 5 (28.12.20).",
+      "empresa": "HIDRANTIA GESTION INTEGRAL DEL AGUA, S.L.",
+      "liquidacion": false,
+      "num_actos": 1,
+      "registro": "La Coru\u00f1a",
+      "sucursal": false
+    },
+    "1739": {
+      "actos": [
+        {
+          "Ceses/Dimisiones": {
+            "Adm. Unico": [
+              "LAREO CASTRO FRANCISCO JAVIER"
+            ],
+            "Liquidador": [
+              "LAREO CASTRO FRANCISCO JAVIER"
+            ]
+          }
+        },
+        {
+          "Nombramientos": {
+            "Liquidador": [
+              "LAREO CASTRO FRANCISCO JAVIER"
+            ]
+          }
+        },
+        {
+          "Disoluci\u00f3n": "Voluntaria."
+        },
+        {
+          "Extinci\u00f3n": null
+        }
+      ],
+      "datos registrales": "T 1515 , F 58, S 8, H C 11870, I/A 5 (28.12.20).",
+      "empresa": "GESTION SEGUROS LAREO SL",
+      "liquidacion": false,
+      "num_actos": 4,
+      "registro": "La Coru\u00f1a",
+      "sucursal": false
+    },
+    "1740": {
+      "actos": [
+        {
+          "Ceses/Dimisiones": {
+            "Con.Delegado": [
+              "SANCHEZ MENDEZ MARIA"
+            ],
+            "Consejero": [
+              "GARCIA BORREGON MILLAN RICARDO",
+              "LOPEZ AREN MANUEL ISIDORO",
+              "SANCHEZ MENDEZ MARIA"
+            ],
+            "Presidente": [
+              "GARCIA BORREGON MILLAN RICARDO"
+            ],
+            "Secretario": [
+              "VAZQUEZ CUETO FERNANDO"
+            ]
+          }
+        },
+        {
+          "Revocaciones": {
+            "Apoderado": [
+              "LOPEZ AREN MANUEL ISIDORO"
+            ]
+          }
+        },
+        {
+          "Nombramientos": {
+            "Adm. Solid.": [
+              "SANCHEZ GONZALEZ JOSE MARIA",
+              "SANCHEZ MENDEZ MARIA"
+            ]
+          }
+        },
+        {
+          "Modificaciones estatutarias": "Art\u00edculo de los estatutos: 5\u00ba. Domicilio social y web corporativa.-. 25. Otros.-."
+        },
+        {
+          "Otros conceptos": "Cambio del Organo de Administraci\u00f3n: Consejo de administraci\u00f3n a Administradores solidarios."
+        },
+        {
+          "Cambio de domicilio social": "C/ MENENDEZ PELAYO 7 1\u00ba IZ (CORU\u00d1A (A))."
+        }
+      ],
+      "datos registrales": "T 3118 , F 26, S 8, H C 37265, I/A 11 (23.12.20).",
+      "empresa": "LICENTIA PATENTES Y MARCAS Y SERVICIOS JURIDICOS, S.L.",
+      "liquidacion": false,
+      "num_actos": 6,
+      "registro": "La Coru\u00f1a",
+      "sucursal": false
+    },
+    "1741": {
+      "actos": [
+        {
+          "Reelecciones": {
+            "Adm. Unico": [
+              "VECINO BOUTUREIRA ALEJANDRO"
+            ]
+          }
+        },
+        {
+          "Modificaciones estatutarias": "Relativo al art\u00edculo 24\u00ba. Los administradores ejercer\u00e1n su cargo por tiempo indefinido.-."
+        }
+      ],
+      "datos registrales": "T 3620 , F 187, S 8, H C 55754, I/A 2 (28.12.20).",
+      "empresa": "RECICLAXECD VECINO SL",
+      "liquidacion": false,
+      "num_actos": 2,
+      "registro": "La Coru\u00f1a",
+      "sucursal": false
+    },
+    "1742": {
+      "actos": [
+        {
+          "Reelecciones": {
+            "Auditor": [
+              "VBELLO AUDIRE S.L"
+            ]
+          }
+        }
+      ],
+      "datos registrales": "T 2688 , F 180, S 8, H C 4982, I/A 22 (28.12.20).",
+      "empresa": "GISVA, S.A.",
+      "liquidacion": false,
+      "num_actos": 1,
+      "registro": "La Coru\u00f1a",
+      "sucursal": false
+    },
+    "1743": {
+      "actos": [
+        {
+          "Ceses/Dimisiones": {
+            "Adm. Unico": [
+              "ABUIN NU\u00d1EZ ANGEL"
+            ],
+            "Liquidador": [
+              "ABUIN NU\u00d1EZ ANGEL"
+            ]
+          }
+        },
+        {
+          "Nombramientos": {
+            "Liquidador": [
+              "ABUIN NU\u00d1EZ ANGEL"
+            ]
+          }
+        },
+        {
+          "Disoluci\u00f3n": "Voluntaria."
+        },
+        {
+          "Extinci\u00f3n": null
+        }
+      ],
+      "datos registrales": "T 2622 , F 68, S 8, H C 29320, I/A 5 (28.12.20).",
+      "empresa": "CONSTRUCCION Y ADMINISTRACION DE INMUEBLES Y OBRAS SL",
+      "liquidacion": false,
+      "num_actos": 4,
+      "registro": "La Coru\u00f1a",
+      "sucursal": false
+    },
+    "1744": {
+      "actos": [
+        {
+          "Ampliaci\u00f3n de capital": "Capital: 1.372,00 Euros. Resultante Suscrito: 27.472,00 Euros."
+        },
+        {
+          "Modificaciones estatutarias": "Art\u00edculo de los estatutos: 3\u00ba. Relativo al capital social.-."
+        }
+      ],
+      "datos registrales": "T 3645 , F 38, S 8, H C 57078, I/A 7 (24.12.20).",
+      "empresa": "INSURANCE MANAGER, S.L.",
+      "liquidacion": false,
+      "num_actos": 2,
+      "registro": "La Coru\u00f1a",
+      "sucursal": false
+    },
+    "1745": {
+      "actos": [
+        {
+          "Ceses/Dimisiones": {
+            "Liquidador": [
+              "MODIA VILAMEA JOSE HECTOR"
+            ]
+          }
+        },
+        {
+          "Nombramientos": {
+            "Liquidador": [
+              "MODIA VILAMEA JOSE HECTOR"
+            ]
+          }
+        },
+        {
+          "Disoluci\u00f3n": "Voluntaria."
+        },
+        {
+          "Extinci\u00f3n": null
+        }
+      ],
+      "datos registrales": "T 1112 , F 157, S 8, H C 5582, I/A 3 (28.12.20).",
+      "empresa": "HEMOVIL SL",
+      "liquidacion": false,
+      "num_actos": 4,
+      "registro": "La Coru\u00f1a",
+      "sucursal": false
+    },
+    "1746": {
+      "actos": [
+        {
+          "Ceses/Dimisiones": {
+            "Adm. Mancom.": [
+              "ALVEDRO MOSQUERA JAIME EDUARDO",
+              "ESPI\u00d1EIRA FERNANDEZ ANTONIO"
+            ]
+          }
+        },
+        {
+          "Nombramientos": {
+            "Adm. Unico": [
+              "SANTOS RODRIGUEZ PABLO-JOSE"
+            ]
+          }
+        },
+        {
+          "Otros conceptos": "Cambio del Organo de Administraci\u00f3n: Administradores mancomunados a Administrador \u00fanico."
+        }
+      ],
+      "datos registrales": "T 1624 , F 160, S 8, H C 13614, I/A 4 (28.12.20).",
+      "empresa": "ELECTRICIDAD ALVESA, S.L.",
+      "liquidacion": false,
+      "num_actos": 3,
+      "registro": "La Coru\u00f1a",
+      "sucursal": false
+    },
+    "1747": {
+      "actos": [
+        {
+          "Nombramientos": {
+            "Apo.Man.Soli": [
+              "GONZALEZ GUNDIN MARCO ANTONIO",
+              "GUNDIN KUHN SONIA",
+              "SANCHEZ GUNDIN CIBRAN"
+            ]
+          }
+        }
+      ],
+      "datos registrales": "T 1052 , F 172, S 8, H C 4682, I/A 19 (24.12.20).",
+      "empresa": "INMOBILIARIA GUNFA, S.A.",
+      "liquidacion": false,
+      "num_actos": 1,
+      "registro": "La Coru\u00f1a",
+      "sucursal": false
+    },
+    "1748": {
+      "actos": [
+        {
+          "Nombramientos": {
+            "Auditor": [
+              "AUDITORES CONSULTORES Y EXPERTOS INDEPENDIENTES SL"
+            ]
+          }
+        }
+      ],
+      "datos registrales": "T 2881 , F 222, S 8, H C 1488, I/A 9 (28.12.20).",
+      "empresa": "HOOKTONE SHIPPING SL",
+      "liquidacion": false,
+      "num_actos": 1,
+      "registro": "La Coru\u00f1a",
+      "sucursal": false
+    },
+    "1749": {
+      "actos": [
+        {
+          "Nombramientos": {
+            "Apo.Man.Soli": [
+              "GONZALEZ GUNDIN MARCO ANTONIO",
+              "GUNDIN KUHN SONIA",
+              "SANCHEZ GUNDIN CIBRAN"
+            ]
+          }
+        }
+      ],
+      "datos registrales": "T 1169 , F 204, S 8, H C 6399, I/A 18 (24.12.20).",
+      "empresa": "POMPAS FUNEBRES DEL NOROESTE, S.A.",
+      "liquidacion": false,
+      "num_actos": 1,
+      "registro": "La Coru\u00f1a",
+      "sucursal": false
+    },
+    "1750": {
+      "actos": [
+        {
+          "Modificaciones estatutarias": "Art\u00edculo de los estatutos: Art\u00edculo 2\u00ba.- La sociedad tiene por objeto: El comercio al por mayor de pescados y otros productos. El procesado de pescados, crust\u00e1ceos y moluscos. Dep\u00f3sito y almancenamiento de mercanc\u00edas. La Sociedad podr\u00e1 desarrollar las activdades integrantes del objeto social."
+        },
+        {
+          "Ampliacion del objeto social": "El procesado de pescados, crust\u00e1ceos y mouscos. Dep\u00f3sito y almancenamiento de mercanc\u00edas."
+        }
+      ],
+      "datos registrales": "T 3474 , F 66, S 8, H C 49597, I/A 3 (28.12.20).",
+      "empresa": "ALIMENTACION EN SERIE, S.L.",
+      "liquidacion": false,
+      "num_actos": 2,
+      "registro": "La Coru\u00f1a",
+      "sucursal": false
+    },
+    "1751": {
+      "actos": [
+        {
+          "Constituci\u00f3n": "Comienzo de operaciones: 3.12.20. Objeto social: - El mantenimiento y reparaci\u00f3n de veh\u00edculos de motor (CNAE 4520), que constituye su actividad principal, y que comprende: El mantenimiento y la reparaci\u00f3n de veh\u00edculos de motor; las reparaciones mec\u00e1nicas; las reparaciones el\u00e9ctricas; la reparaci\u00f3n de sistemas de inyecci\u00f3n electr\u00f3nica; el mantenimi. Domicilio: C/ GIL VICENTE 6 BAJO (CORU\u00d1A (A)). Capital: 3.176,00 Euros."
+        },
+        {
+          "Declaraci\u00f3n de unipersonalidad": "Socio \u00fanico: RAMOS RODRIGUEZ ANA MARIA"
+        },
+        {
+          "Nombramientos": {
+            "Adm. Unico": [
+              "RAMOS RODRIGUEZ ANA MARIA"
+            ]
+          }
+        }
+      ],
+      "datos registrales": "T 3737 , F 25, S 8, H C 60253, I/A 1 (28.12.20).",
+      "empresa": "SAETA DEL PRINCIPADO, S.L.",
+      "liquidacion": false,
+      "num_actos": 3,
+      "registro": "La Coru\u00f1a",
+      "sucursal": false
+    },
+    "1752": {
+      "actos": [
+        {
+          "Articulo 378.5 del Reglamento del Registro Mercantil": "Justificacion de no aprobacion de cuentas del ejercicio 2019 mediante certificacion del organo de administracion."
+        }
+      ],
+      "datos registrales": "T 3462 , F 104, S 8, H C 49189, I/A 2 (28.12.20).",
+      "empresa": "TALLERES MAGACAR, S.L.",
+      "liquidacion": false,
+      "num_actos": 1,
+      "registro": "La Coru\u00f1a",
+      "sucursal": false
+    },
+    "1753": {
+      "actos": [
+        {
+          "Constituci\u00f3n": "Comienzo de operaciones: 17.08.20. Objeto social: Constituye su objeto social la realizaci\u00f3n de la actividad de corredur\u00eda de seguros (CNAE-6622). Domicilio: C/ FERROL 1 8 (CORU\u00d1A (A)). Capital: 3.000,00 Euros."
+        },
+        {
+          "Declaraci\u00f3n de unipersonalidad": "Socio \u00fanico: ASYP ATLANTICA SL"
+        },
+        {
+          "Nombramientos": {
+            "Adm. Unico": [
+              "CESAR MARCOS JAVIER"
+            ]
+          }
+        }
+      ],
+      "datos registrales": "T 3737 , F 30, S 8, H C 60255, I/A 1 (28.12.20).",
+      "empresa": "ASYP ATLANTICA MEDIACION CORREDURIA DE SEGUROS, SOCIEDAD LIMITADA",
+      "liquidacion": false,
+      "num_actos": 3,
+      "registro": "La Coru\u00f1a",
+      "sucursal": false
+    },
+    "1754": {
+      "actos": [
+        {
+          "Modificaciones estatutarias": "Art\u00edculo de los estatutos: 4. Domicilio social y web corporativa.-."
+        },
+        {
+          "Cambio de domicilio social": "C/ MANUEL GUZMAN 1 Esc.1 1 (CORU\u00d1A (A))."
+        }
+      ],
+      "datos registrales": "T 3737 , F 40, S 8, H C 60257, I/A 2 (28.12.20).",
+      "empresa": "AURORA ASSET II, SL",
+      "liquidacion": false,
+      "num_actos": 2,
+      "registro": "La Coru\u00f1a",
+      "sucursal": false
+    },
+    "1755": {
+      "actos": [
+        {
+          "Nombramientos": {
+            "Apoderado": [
+              "OTERO VEIGA DOLORES JULIANA"
+            ]
+          }
+        }
+      ],
+      "datos registrales": "T 976 , F 147, S 8, H C 3536, I/A 7 (25.12.20).",
+      "empresa": "HERMANOS VARELA VILLAR, S.L.",
+      "liquidacion": false,
+      "num_actos": 1,
+      "registro": "La Coru\u00f1a",
+      "sucursal": false
+    },
+    "1756": {
+      "actos": [
+        {
+          "Situaci\u00f3n concursal": "Procedimiento concursal 13/2018. FIRME: Si, Fecha de resoluci\u00f3n 8/10/2020. Auto de conclusi\u00f3n del concurso. Insuficiencia de la masa activa. Juzgado: num. 0 JUZGADO DE LO MERCANTIL NUMERO 1 DE A CORU\u00d1A. Juez: NURIA FACHAL NOGUER. Resoluciones: Auto de conclusi\u00f3n del concurso por insuficiencia de la masa activa, extinci\u00f3n.de la Sociedad."
+        },
+        {
+          "Situaci\u00f3n concursal": "Procedimiento concursal 13/2018. Fecha de resoluci\u00f3n 26/01/2018. Revocaci\u00f3n de administradores concursales. Juzgado: num. 0 JUZGADO DE LO MERCANTIL. Juez: ZIGOR OYARBIDE DE LATORRE. Administrador Concursal. Fecha 8/10/2020, NIF/CIF B80731839. DELOITTE ABOGADOS SLP."
+        },
+        {
+          "Extinci\u00f3n": null
+        }
+      ],
+      "datos registrales": "T 3285 , F 107, S 8, H C 42962, I/A 4 (22.12.20).",
+      "empresa": "AVICUARENTAYDOS SL",
+      "liquidacion": false,
+      "num_actos": 3,
+      "registro": "La Coru\u00f1a",
+      "sucursal": false
+    },
+    "1757": {
+      "actos": [
+        {
+          "Ceses/Dimisiones": {
+            "Adm. Unico": [
+              "FERNANDEZ OTERO MARIA DEL PILAR"
+            ]
+          }
+        },
+        {
+          "Situaci\u00f3n concursal": "Procedimiento concursal 124/2019. FIRME: Si, Fecha de resoluci\u00f3n 5/06/2020. Auto de apertura de la fase de liquidaci\u00f3n. Juzgado: num. 0 JUZGADO DE LO MERCANTIL NUMERO 2 DE A CORU\u00d1A. Juez: AMELIA MARIA PEREZ MOSTEIRO. Resoluciones: Auto de apertura de la fase de liquidaci\u00f3n, suspensi\u00f3n de las facultades de administraci\u00f3n y disposici\u00f3n del deudor, disoluci\u00f3n de la sociedad y cese del \u00f3rgano de administraci\u00f3n.-"
+        },
+        {
+          "Disoluci\u00f3n": "Otras Causas."
+        }
+      ],
+      "datos registrales": "T 2927 , F 196, S 8, H C 34908, I/A 4 (28.12.20).",
+      "empresa": "MANS GALEGAS SL",
+      "liquidacion": true,
+      "num_actos": 3,
+      "registro": "La Coru\u00f1a",
+      "sucursal": false
+    },
+    "1758": {
+      "actos": [
+        {
+          "Situaci\u00f3n concursal": "Procedimiento concursal 124/2019. FIRME: Si, Fecha de resoluci\u00f3n 5/09/2019. Auto de aprobaci\u00f3n del plan de liquidaci\u00f3n. Juzgado: num. 0 JUZGADO DE LO MERCANTIL NUMERO 2 DE A CORU\u00d1A. Juez: MARIA SALOME MARTINEZ BOUZAS. Resoluciones: Auto de aprobaci\u00f3n del plan de liquidaci\u00f3n."
+        }
+      ],
+      "datos registrales": "T 2927 , F 196, S 8, H C 34908, I/A 5 (28.12.20).",
+      "empresa": "MANS GALEGAS SL",
+      "liquidacion": true,
+      "num_actos": 1,
+      "registro": "La Coru\u00f1a",
+      "sucursal": false
+    },
+    "1759": {
+      "actos": [
+        {
+          "Declaraci\u00f3n de unipersonalidad": "Socio \u00fanico: PAMPIN CEA FERNANDO"
+        },
+        {
+          "Ceses/Dimisiones": {
+            "Adm. Solid.": [
+              "BARREIRO SANCHEZ IVAN ELISEO",
+              "PAMPIN CEA FERNANDO"
+            ]
+          }
+        },
+        {
+          "Nombramientos": {
+            "Adm. Unico": [
+              "PAMPIN CEA FERNANDO"
+            ]
+          }
+        },
+        {
+          "Otros conceptos": "Cambio del Organo de Administraci\u00f3n: Administradores solidarios a Administrador \u00fanico."
+        }
+      ],
+      "datos registrales": "T 369 , F 64, S 8, H SC 50403, I/A 2 (23.12.20).",
+      "empresa": "ACUATERM FIV INSTALACIONES SL",
+      "liquidacion": false,
+      "num_actos": 4,
+      "registro": "Santiago de Compostela (La Coru\u00f1a)",
+      "sucursal": false
+    },
+    "1760": {
+      "actos": [
+        {
+          "Ceses/Dimisiones": {
+            "Adm. Unico": [
+              "FREIRE RODRIGUEZ RAMON"
+            ]
+          }
+        },
+        {
+          "Nombramientos": {
+            "Liquidador": [
+              "FREIRE RODRIGUEZ RAMON"
+            ]
+          }
+        },
+        {
+          "Otros conceptos": "Cambio del Organo de Administraci\u00f3n: Administrador \u00fanico a Liquidador."
+        },
+        {
+          "Disoluci\u00f3n": "Voluntaria."
+        }
+      ],
+      "datos registrales": "T 252 , F 179, S 8, H SC 12639, I/A 4 (23.12.20).",
+      "empresa": "AUTOBUSES DE MELIDE SL",
+      "liquidacion": true,
+      "num_actos": 4,
+      "registro": "Santiago de Compostela (La Coru\u00f1a)",
+      "sucursal": false
+    },
+    "1761": {
+      "actos": [
+        {
+          "Reducci\u00f3n de capital": "Importe reducci\u00f3n: 600,00 Euros. Resultante Suscrito: 6.000,00 Euros."
+        },
+        {
+          "Modificaciones estatutarias": "Art\u00edculo de los estatutos: Art\u00edculo 5. El capital social es de SEIS MIL EUROS -6.000,00 euros- dividido en CIEN -100- participaciones sociales de SESENTA -60,00- euros de valor nominal cada una de ellas, acumulables e indivisibles, numeradas correlativamente del 1 al 100, ambos inclusive. Cada."
+        }
+      ],
+      "datos registrales": "T 29 , F 65, S 8, H SC 32149, I/A 4 (23.12.20).",
+      "empresa": "GRU-MILLA SL",
+      "liquidacion": false,
+      "num_actos": 2,
+      "registro": "Santiago de Compostela (La Coru\u00f1a)",
+      "sucursal": false
+    },
+    "1762": {
+      "actos": [
+        {
+          "Ceses/Dimisiones": {
+            "Consejero": [
+              "OITAVEN BARCALA JESUS",
+              "VAZQUEZ IGLESIAS NICOLAS"
+            ]
+          }
+        },
+        {
+          "Nombramientos": {
+            "Consejero": [
+              "FUENTES LOSADA ALBERTO",
+              "TELLADO BARCIA VERONICA",
+              "VILA LOPEZ MANUEL"
+            ]
+          }
+        }
+      ],
+      "datos registrales": "T 134 , F 60, S 8, H SC 17823, I/A 68 (24.12.20).",
+      "empresa": "SOCIEDADE PUBLICA DE INVESTIMENTOS DE GALICIA SA",
+      "liquidacion": false,
+      "num_actos": 2,
+      "registro": "Santiago de Compostela (La Coru\u00f1a)",
+      "sucursal": false
+    },
+    "1763": {
+      "actos": [
+        {
+          "Constituci\u00f3n": "Comienzo de operaciones: 1.01.21. Objeto social: La sociedad tiene por objeto el desarrollo de las actividades correspondientes a los siguientes c\u00f3digos y descripciones de la Clasificaci\u00f3n Nacional de Actividades Econ\u00f3micas: Actividad principal: 47.91/Comercio al por menor por correspondencia o internet. Otras actividades: 47.75/Comercio al por me. Domicilio: C/ JUAN XXIII 73 Esc.3 (MELIDE). Capital: 3.000,00 Euros."
+        },
+        {
+          "Declaraci\u00f3n de unipersonalidad": "Socio \u00fanico: ALFONSO ROCHE SILVIA"
+        },
+        {
+          "Nombramientos": {
+            "Adm. Unico": [
+              "ALFONSO ROCHE SILVIA"
+            ]
+          }
+        }
+      ],
+      "datos registrales": "T 390 , F 141, S 8, H SC 50965, I/A 1 (24.12.20).",
+      "empresa": "DISVAMEL 2020 SL",
+      "liquidacion": false,
+      "num_actos": 3,
+      "registro": "Santiago de Compostela (La Coru\u00f1a)",
+      "sucursal": false
+    },
+    "1764": {
+      "actos": [
+        {
+          "Ceses/Dimisiones": {
+            "Adm. Unico": [
+              "SEOANE PUIG JOSE"
+            ]
+          }
+        },
+        {
+          "Nombramientos": {
+            "Adm. Unico": [
+              "SEOANE GONZALEZ ANA MARIA"
+            ]
+          }
+        }
+      ],
+      "datos registrales": "T 391 , F 37, S 8, H SC 18360, I/A 2 (28.12.20).",
+      "empresa": "RADIADORES COMPOS ORDO\u00d1EZ SL",
+      "liquidacion": false,
+      "num_actos": 2,
+      "registro": "Santiago de Compostela (La Coru\u00f1a)",
+      "sucursal": false
+    },
+    "1765": {
+      "actos": [
+        {
+          "Ceses/Dimisiones": {
+            "Adm. Unico": [
+              "LOPEZ MARTINEZ ALFONSO"
+            ]
+          }
+        }
+      ],
+      "datos registrales": "T 74 , F 192, S 8, H SC 44731, I/A 2 (28.12.20).",
+      "empresa": "SOPORTES PUBLICITARIOS XACOBEO SL",
+      "liquidacion": false,
+      "num_actos": 1,
+      "registro": "Santiago de Compostela (La Coru\u00f1a)",
+      "sucursal": false
+    }
+  },
+  "cve": "BORME-A-2021-2-15",
+  "date": "2021-01-05",
+  "from_anuncio": 1735,
+  "num": 2,
+  "num_anuncios": 31,
+  "provincia": "La Coru\u00f1a",
+  "raw_version": "1",
+  "seccion": "A",
+  "to_anuncio": 1765,
+  "url": "https://boe.es/borme/dias/2021/01/05/pdfs/BORME-A-2021-2-15.pdf",
+  "version": "2001"
+}
