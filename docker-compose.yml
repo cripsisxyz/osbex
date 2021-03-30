@@ -1,0 +1,42 @@
+version: '3.2'
+
+services:
+  opendistro:
+    image: 'amazon/opendistro-for-elasticsearch:1.13.1'
+    volumes:
+      - type: volume
+        source: elasticsearch
+        target: /usr/share/elasticsearch/data
+    ports:
+      - "9200:9200"
+      - "9601:9600"
+    environment:
+      ES_JAVA_OPTS: "-Xmx256m -Xms256m"
+      ELASTIC_PASSWORD: changeme
+      discovery.type: single-node
+    networks:
+      - elk
+
+  kibana:
+    image: amazon/opendistro-for-elasticsearch-kibana:1.13.1
+    ports:
+      - 5601:5601
+    expose:
+      - "5601"
+    environment:
+      ELASTICSEARCH_URL: https://opendistro:9200
+      ELASTICSEARCH_HOSTS: https://opendistro:9200
+    volumes:
+      - type: bind
+        source: ./config/kibana.yml
+        target: /usr/share/kibana/config/kibana.yml
+        read_only: true
+    networks:
+      - elk
+
+networks:
+  elk:
+    driver: bridge
+
+volumes:
+  elasticsearch:
