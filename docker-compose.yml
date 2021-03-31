@@ -2,7 +2,7 @@ version: '3.2'
 
 services:
   opendistro:
-    image: 'amazon/opendistro-for-elasticsearch:1.13.1'
+    image: amazon/opendistro-for-elasticsearch:latest
     volumes:
       - type: volume
         source: elasticsearch
@@ -17,8 +17,27 @@ services:
     networks:
       - elk
 
+  logstash:
+   image: docker.elastic.co/logstash/logstash-oss:7.12.0
+   volumes:
+      - type: bind
+        source: ./config/logstash/borme_ingestion
+        target: /usr/share/logstash/pipeline
+        read_only: true
+   ports:
+      - "5000:5000"
+      - "8888:8888"
+   expose:
+      - "8888"
+   environment:
+      LS_JAVA_OPTS: "-Xmx256m -Xms256m"
+   networks:
+      - elk
+   depends_on:
+      - opendistro
+
   kibana:
-    image: amazon/opendistro-for-elasticsearch-kibana:1.13.1
+    image: amazon/opendistro-for-elasticsearch-kibana:latest
     ports:
       - 5601:5601
     expose:
