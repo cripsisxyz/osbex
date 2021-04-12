@@ -1,4 +1,36 @@
-import requests, xmltodict, json, bormeparser, os
+import requests, xmltodict, json, bormeparser, os, yaml, time, logging, sys
+
+def set_logger():
+    root = logging.getLogger()
+    root.setLevel(logging.INFO)
+    handler = logging.StreamHandler(sys.stdout)
+    handler.setLevel(logging.INFO)
+    formatter = logging.Formatter('[%(levelname)s] %(asctime)s - %(funcName)s:%(lineno)s - %(message)s')
+    handler.setFormatter(formatter)
+    root.addHandler(handler)
+
+def load_config():
+    try:
+        yaml_conf_path = f"{os.getcwd()}/config/borme-extractor/checker.yml"
+        with open(yaml_conf_path, 'r') as file:
+            yaml_conf = yaml.full_load(file)
+    except:
+        logging.error(f"Imposible cargar configuración! ({yaml_conf_path}) saliendo...")
+        exit()
+    else:
+        logging.info(f"Configuración cargada exitosamente ({yaml_conf_path})")
+        return yaml_conf
+
+def write_config(new_config):
+    try:
+        yaml_conf_path = f"{os.getcwd()}/config/borme-extractor/checker.yml"
+        with open(yaml_conf_path, 'w') as file:
+            yaml.dump(new_config, file)
+    except:
+        logging.error(f"Imposible escribir nueva configuración! ({yaml_conf_path}) saliendo...")
+        exit()
+    else:
+        logging.info(f"Nueva configuración escrita exitosamente ({yaml_conf_path})")
 
 def download_raw_xml(borme_id):
     raw_xml = requests.get(f'https://www.boe.es/diario_borme/xml.php?id={borme_id}')
@@ -24,7 +56,12 @@ def download_parse_pdf(pdf_url):
     
     return data
 
-def get_borme_info(borme_jstring, requested_zone):
+def post_to_logstash(borme_data):
+    url = 'http://127.0.01:8888'
+    x = requests.post(url, data = borme_data)
+    print(x.text)
+
+def get_borme_info(borme_jstring, requested_zone, borme_id):
     borme_dict = json.loads(borme_jstring)
 
     needed_data = {}
@@ -58,7 +95,7 @@ def get_borme_info(borme_jstring, requested_zone):
                 'pdf_url': zoneinfo['urlPdf']['#text'],
                 'pdf_raw_data': download_parse_pdf(zoneinfo['urlPdf']['#text'])
             })
-    #B
+
     if needed_data['A']:
         return needed_data
     else:
@@ -66,33 +103,73 @@ def get_borme_info(borme_jstring, requested_zone):
 
 if __name__ == "__main__":
     
-    requested_zones = ["A CORUÑA", "PONTEVEDRA"]
-    #requested_zones = ["A CORUÑA"]
+    # Seteamos el formato del logger y que printee al stdout
+    set_logger()
 
-    for requested_zone in requested_zones:
-        requested_date = "2021-03-10"
-        rdate = requested_date.split("-")
-        borme_xml_id = f"BORME-S-{rdate[0]}{rdate[1]}{rdate[2]}"
-        completed_cycle = False
+    # Entramos en bucle infinito para que el contenedor se mantenga siempre activo
+    while True:
 
-        while not completed_cycle:
-            print("INTEEEEEEERACIOOOOOOOON")
+        logging.info(f"Incializando app")
 
-            borme_jstring = xml_to_jstring(download_raw_xml(borme_xml_id))
-            borme_data = get_borme_info(borme_jstring, requested_zone)
-            
-            if borme_data:
-                if borme_data['metadata']['next_pub_date']:
-                    rdate = borme_data['metadata']['next_pub_date'].split('/')
-                    borme_old_id = borme_xml_id
-                    borme_xml_id = f"BORME-S-{rdate[2]}{rdate[1]}{rdate[0]}"
+        # Cargamos el YAML de configuración
+        yaml_conf = load_config()
 
-                    print(json.dumps(get_borme_info(borme_jstring, requested_zone)))
+        # Recogemos las zonas necesarias del YAML
+        requested_zones = []
 
-                    if borme_old_id == borme_xml_id:
+        for key, value in yaml_conf['zones'].items():
+            requested_zones.append(key)
+        
+        # Para cada zona..
+        for requested_zone in requested_zones:
+
+            requested_date = yaml_conf['zones'][requested_zone]['last_checked']
+
+            logging.info(f"Inciando proceso para zona {requested_zone} para el día {requested_date}")
+
+            rdate = requested_date.split("-")
+            borme_xml_id = f"BORME-S-{rdate[0]}{rdate[1]}{rdate[2]}"
+            completed_cycle = False
+
+            while not completed_cycle:
+                # Recargamos el YAML de configuración en busqueda 
+                yaml_conf = load_config()
+
+                logging.info(f"Descargando XML base del día..")
+                borme_jstring = xml_to_jstring(download_raw_xml(borme_xml_id))
+
+                logging.info(f"Descargando PDF del día para esta zona..")
+                logging.info(f"Recopilando datos del boletín..")
+                borme_data = get_borme_info(borme_jstring, requested_zone, borme_xml_id)
+                
+                if borme_data:
+                    if "next_pub_date" in borme_data['metadata'] and borme_data['metadata']['next_pub_date'] is not None:
+                        print(borme_data['metadata'])
+                        rdate = borme_data['metadata']['next_pub_date'].split('/')
+                        borme_old_id = borme_xml_id
+                        borme_xml_id = f"BORME-S-{rdate[2]}{rdate[1]}{rdate[0]}"
+                        yaml_conf['zones'][requested_zone]['last_checked'] = f"{rdate[2]}-{rdate[1]}-{rdate[0]}"
+                        write_config(yaml_conf)
+                        #print(json.dumps(get_borme_info(borme_jstring, requested_zone)))
+
+                        logging.info(f"Recopilando datos del boletín..")
+                        post_to_logstash(json.dumps(get_borme_info(borme_jstring, requested_zone, borme_xml_id)))
+
+                        if borme_old_id == borme_xml_id:
+                            completed_cycle = True
+                    else:
+                        
+                        #borme_data
+                        # enviar dezdultimez
+                        post_to_logstash(json.dumps(get_borme_info(borme_jstring, requested_zone, borme_xml_id)))
+                        logging.info(f"Nada más que enviar por ahora")
+                        #print(json.dumps(get_borme_info(borme_jstring, requested_zone)))
+                        #get_borme_info(borme_jstring, requested_zone)
+                        
                         completed_cycle = True
                 else:
-                    print(json.dumps(get_borme_info(borme_jstring, requested_zone)))
+                    logging.info(f"Nada más que enviar por ahora")
                     completed_cycle = True
 
-                
+        # Esperamos x segundos entre cada iteración puesto que va haber pocos cambios entre ejecuciones
+        time.sleep(yaml_conf['general']['check_every_s'])

@@ -19,10 +19,17 @@ services:
 
   logstash:
    image: docker.elastic.co/logstash/logstash-oss:7.12.0
+   command: bin/logstash --config.reload.automatic
    volumes:
       - type: bind
+        source: ./config/logstash/pipelines.yml
+        target: /usr/share/logstash/config/pipelines.yml
+        read_only: true
+      - type: bind
         source: ./config/logstash/borme_ingestion
-        target: /usr/share/logstash/pipeline
+        target: /usr/share/logstash/pipelines/borme_ingestion
+        bind:
+          propagation: shared
         read_only: true
    ports:
       - "5000:5000"
@@ -47,9 +54,24 @@ services:
       ELASTICSEARCH_HOSTS: https://opendistro:9200
     volumes:
       - type: bind
-        source: ./config/kibana.yml
+        source: ./config/kibana/kibana.yml
         target: /usr/share/kibana/config/kibana.yml
         read_only: true
+    networks:
+      - elk
+
+  grafana:
+    image: grafana/grafana:latest
+    expose:
+      - "3000"
+    environment:
+      GF_INSTALL_PLUGINS: marcusolsson-dynamictext-panel
+    volumes:
+      - type: bind
+        source: ./config/grafana/grafana.db
+        target: /var/lib/grafana/grafana.db
+    ports:
+      - 3000:3000
     networks:
       - elk
 
