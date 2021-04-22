@@ -1,15 +1,30 @@
-version: '3.2'
+version: '3.9'
 
 services:
+  borme-extractor:
+    build:
+      context: borme-extractor-app
+    deploy:
+      restart_policy:
+        condition: on-failure
+    volumes:
+      - type: bind
+        source: ./borme-extractor-app/config/checker.yml
+        target: /app/config/borme-extractor/checker.yml
+        read_only: false
+    networks:
+      - elk
+    depends_on:
+      - opendistro
+      - kibana
+      - grafana
+
   opendistro:
     image: amazon/opendistro-for-elasticsearch:latest
     volumes:
       - type: volume
         source: elasticsearch
         target: /usr/share/elasticsearch/data
-    ports:
-      - "9200:9200"
-      - "9601:9600"
     environment:
       ES_JAVA_OPTS: "-Xmx256m -Xms256m"
       ELASTIC_PASSWORD: changeme
@@ -18,9 +33,9 @@ services:
       - elk
 
   logstash:
-   image: docker.elastic.co/logstash/logstash-oss:7.12.0
-   command: bin/logstash --config.reload.automatic
-   volumes:
+    image: docker.elastic.co/logstash/logstash-oss:7.12.0
+    command: bin/logstash --config.reload.automatic
+    volumes:
       - type: bind
         source: ./config/logstash/pipelines.yml
         target: /usr/share/logstash/config/pipelines.yml
@@ -31,16 +46,11 @@ services:
         bind:
           propagation: shared
         read_only: true
-   ports:
-      - "5000:5000"
-      - "8888:8888"
-   expose:
-      - "8888"
-   environment:
+    environment:
       LS_JAVA_OPTS: "-Xmx256m -Xms256m"
-   networks:
+    networks:
       - elk
-   depends_on:
+    depends_on:
       - opendistro
 
   kibana:
@@ -59,13 +69,15 @@ services:
         read_only: true
     networks:
       - elk
+    depends_on:
+      - opendistro
 
   grafana:
     image: grafana/grafana:latest
     expose:
       - "3000"
     environment:
-      GF_INSTALL_PLUGINS: marcusolsson-dynamictext-panel
+      GF_INSTALL_PLUGINS: marcusolsson-dynamictext-panel,ryantxu-ajax-panel
     volumes:
       - type: bind
         source: ./config/grafana/grafana.db
