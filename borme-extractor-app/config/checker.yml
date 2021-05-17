@@ -5,8 +5,8 @@ output_http:
   server: logstash
 zones:
   "A CORU\xD1A":
-    last_checked: '2021-04-23'
-  MADRID:
-    last_checked: '2021-04-23'
+    last_checked: '2020-01-01'
+  MURCIA:
+    last_checked: '2020-01-01'
   PONTEVEDRA:
-    last_checked: '2021-04-23'
+    last_checked: '2020-01-01'

@@ -39,6 +39,7 @@ zones:
 ```
 Le estamos indicando que queremos ingestar solamente las provincias de A Coruña, Pontevedra y Lugo con las fechas establecidas. Simplemente añadir a continuación las provicincias necesarias respectando el formato YAML. Las provincias se deben de anotar tal y como aparecen en boe.es/borme_diario.
 
+Este fichero se actualizará según se vayan descargando boletines.
 ### Levantar OSBEX
 Ubicarse en una shell al directorio del proyecto y levantar el entorno de docker con **`docker-compose up -d`**. Comenzará a construir / descargar las imágenes de los contenedores y levantarlos. Una vez todo esté operativo borme-extractor comenzará automáticamente a descargarse los boletines y a ingestarlos.
 
@@ -46,11 +47,17 @@ Ubicarse en una shell al directorio del proyecto y levantar el entorno de docker
 Ubicarse en una shell al directorio del proyecto y parar el entorno de docker con **`docker-compose stop`**. Esto únicamente detendrá los contenedores y se podrán volver a levantar con la instrucción de levantamiento según sea necesario.
 
 ### Eliminar OSBEX
-Ubicarse en una shell al directorio del proyecto y eliminar completamente el entorno de docker con **`docker-compose rm -f`**. Esto eliminará DEFINITIVAMENTE todos los recursos de OSBEX incluidos los datos descargados del BORME.
+Primeramente parar OSBEX. Ubicarse en una shell al directorio del proyecto y eliminar completamente el entorno de docker con **`docker-compose rm -f`**. 
+Esto eliminará todo el entorno aunque los datos de OSBEX permanecen en el volumen. Para eliminar todos los volúmenes inutilizados, ejecutar: `docker volume prune`.
+Esto eliminará DEFINITIVAMENTE todos los recursos de OSBEX, incluidos los datos descargados del BORME.
 
 ### Visualizar el estado de la ingestión
 Una vez levantado el entorno, abrir grafana en un navegador con http://localhost:3000 y las credenciales por defecto (admin/admin) y ubicarse en el dashboard "ESTADO INGESTION BORME" (http://localhost:3000/d/a0kcurXGk/estado-ingestion-borme?orgId=1)
 
 ## Configuraciones avanzadas
 
-Observando el [diagrama de flujo](#diagrama)
+Observando el [diagrama de flujo](#diagrama) podemos ver todos los archivos de configuración implicados. 
+Las cajas con forma de carpetas son la ubicación dentro del repositorio local mientras que las rutas descritas abajo de las cajas son las rutas dentro de los contenedores.
+
+Todo esto está descrito en `docker-compose.yml` dónde podemos observar para cada componente su definición (imagen de docker a utilizar, volúmenes, rutas, configuraciones, etc.)
+
