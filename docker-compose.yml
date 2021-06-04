@@ -1,4 +1,4 @@
-version: '3.9'
+version: '3.3'
 
 services:
   borme-extractor:
@@ -77,7 +77,7 @@ services:
     expose:
       - "3000"
     environment:
-      GF_INSTALL_PLUGINS: marcusolsson-dynamictext-panel,ryantxu-ajax-panel
+      GF_INSTALL_PLUGINS: marcusolsson-dynamictext-panel,ryantxu-ajax-panel,grafana-piechart-panel,briangann-datatable-panel
     volumes:
       - type: bind
         source: ./config/grafana/grafana.db

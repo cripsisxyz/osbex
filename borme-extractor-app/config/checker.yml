@@ -4,9 +4,10 @@ output_http:
   port: 8888
   server: logstash
 zones:
-  "A CORU\xD1A":
-    last_checked: '2020-01-01'
-  MURCIA:
-    last_checked: '2020-01-01'
+  "A CORUÑA":
+    last_checked: '2018-01-01'
+  LUGO:
+    last_checked: '2018-01-01'
   PONTEVEDRA:
-    last_checked: '2020-01-01'
+    last_checked: '2018-01-01'
+
