@@ -1,0 +1,13 @@
+general:
+  check_every_s: 60
+output_http:
+  port: 8888
+  server: logstash
+zones:
+  "A CORUÑA":
+    last_checked: '2018-01-01'
+  LUGO:
+    last_checked: '2018-01-01'
+  PONTEVEDRA:
+    last_checked: '2018-01-01'
+
