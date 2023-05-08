@@ -7,7 +7,7 @@ OSBEX se crea con la finalidad de cubrir una alternativa Open Source a las exist
 Actualmente el proyecto es una __prueba de concepto__ que ya se puede utilizar por cualquier usuario que lo necesite, aunque si el proyecto progresa será sin duda necesario mejorar el empaquetado de la aplicación y tecnologías, además de otra línea de presentación.
 
 ## Documentación completa
-https://trasteandoenlared.es/presentacion-osbex/
+https://www.cripsis.xyz/es/presentacion-osbex/
 
 ## Flujo del funcionamiento de OSBEX
 
